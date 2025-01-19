@@ -25,7 +25,7 @@ To set up the project locally, follow these steps:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/quiz_app.git
+git clone https://github.com/deanstyles/quiz_app.git
 cd quiz_app
 ```
 
