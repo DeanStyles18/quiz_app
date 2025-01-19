@@ -61,15 +61,3 @@ To run the widget tests, use the following command:
 flutter test
 ```
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Thanks to the Flutter community for their support and resources.
-- Special thanks to the contributors of the packages used in this project.
