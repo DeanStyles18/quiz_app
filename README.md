@@ -61,3 +61,7 @@ To run the widget tests, use the following command:
 flutter test
 ```
 
+### ScreenShots and Recording
+
+https://drive.google.com/drive/folders/1QMl1D9a-AC1xe5xmU3yu1YIDqLQ5BEpF
+
