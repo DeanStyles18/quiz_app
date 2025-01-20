@@ -34,7 +34,17 @@ class _ReviewScreenState extends State<ReviewScreen>
     try {
       final quiz = await _quizService.fetchQuiz();
       setState(() {
-        _questions = quiz.questions;
+        _questions = quiz.questions?.map((question) {
+              // Trim the description and detailedSolution
+              question.description = question.description
+                  ?.replaceAll(RegExp(r'[\r\n]+'), '')
+                  .trim();
+              question.detailedSolution = question.detailedSolution
+                  ?.replaceAll(RegExp(r'[\r\n]+'), '')
+                  .trim();
+              return question;
+            }).toList() ??
+            []; // Provide an empty list if questions is null
         _isLoading = false;
       });
       _controller.forward();
@@ -184,7 +194,10 @@ class _ReviewScreenState extends State<ReviewScreen>
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        question.detailedSolution ?? 'No explanation provided.',
+                        (question.detailedSolution ??
+                                'No explanation provided.')
+                            .replaceAll('*', '')
+                            .trim(),
                         style: GoogleFonts.poppins(
                           fontSize: 14,
                           color: Colors.black54,
