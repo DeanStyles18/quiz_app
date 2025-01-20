@@ -6,6 +6,7 @@ import '../widgets/fade_animation.dart';
 import 'result_screen.dart';
 import '../widgets/loading_animation.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'dart:math';
 
 class QuizScreen extends StatefulWidget {
   @override
@@ -61,6 +62,10 @@ class _QuizScreenState extends State<QuizScreen>
       final quiz = await _quizService.fetchQuiz();
       setState(() {
         _quiz = quiz;
+
+        // Shuffle the questions randomly
+        _quiz!.questions!.shuffle(Random());
+
         _isLoading = false;
       });
       _slideController.forward();
