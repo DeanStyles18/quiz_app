@@ -13,6 +13,7 @@ The Quiz App is a Flutter-based application designed to provide users with an en
 - **Animated Transitions**: Smooth animations enhance the user experience during question transitions and loading screens.
 - **Timer**: Each question has a time limit, adding an element of challenge to the quiz.
 - **Lives System**: Users have a limited number of lives, which adds a layer of difficulty to the quiz.
+- **Shuffling**: The questions are shuffled everytime a user starts the quiz .
 - **Remarks**: Based on their performance remarks are given with emojis.
 
 ## Setup Instructions
