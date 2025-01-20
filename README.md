@@ -1,4 +1,6 @@
 # Quiz App
+Name : Bikrant Bidyut Kakati
+Contact No : 8721895005(whatsapp)
 
 ## Project Overview
 
